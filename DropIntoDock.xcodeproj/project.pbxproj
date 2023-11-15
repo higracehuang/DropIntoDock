@@ -11,6 +11,7 @@
 		06113ECA2B04661400BD963F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06113EC92B04661400BD963F /* ContentView.swift */; };
 		06113ECC2B04661700BD963F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06113ECB2B04661700BD963F /* Assets.xcassets */; };
 		06113ECF2B04661700BD963F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06113ECE2B04661700BD963F /* Preview Assets.xcassets */; };
+		06113EDA2B046B3300BD963F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06113ED92B046B3300BD963F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		06113ECB2B04661700BD963F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06113ECE2B04661700BD963F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06113ED02B04661700BD963F /* DropIntoDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DropIntoDock.entitlements; sourceTree = "<group>"; };
+		06113ED82B0468D000BD963F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06113ED92B046B3300BD963F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 		06113EC62B04661400BD963F /* DropIntoDock */ = {
 			isa = PBXGroup;
 			children = (
+				06113ED82B0468D000BD963F /* Info.plist */,
+				06113ED92B046B3300BD963F /* AppDelegate.swift */,
 				06113EC72B04661400BD963F /* DropIntoDockApp.swift */,
 				06113EC92B04661400BD963F /* ContentView.swift */,
 				06113ECB2B04661700BD963F /* Assets.xcassets */,
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06113EDA2B046B3300BD963F /* AppDelegate.swift in Sources */,
 				06113ECA2B04661400BD963F /* ContentView.swift in Sources */,
 				06113EC82B04661400BD963F /* DropIntoDockApp.swift in Sources */,
 			);
@@ -279,11 +285,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DropIntoDock/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deelightfullabs.DropIntoDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,11 +314,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DropIntoDock/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.deelightfullabs.DropIntoDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";

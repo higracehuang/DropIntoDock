@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct DropIntoDockApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+  var body: some Scene {
+    if #available(macOS 13.0, *) {
+      return Window("DropIntoDock", id: "main") {
+        ContentView()
+      }
+    } else {
+      return WindowGroup {
+        ContentView()
+      }
     }
+  }
 }
